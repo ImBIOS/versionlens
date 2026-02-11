@@ -1,5 +1,5 @@
-use zed_extension_api as zed;
 use std::sync::Arc;
+use zed_extension_api as zed;
 
 struct VersionLensExtension;
 

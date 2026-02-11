@@ -1,10 +1,10 @@
 [package]
-name = "zed-versionlens"
+name = "versionlens"
 version = "0.0.1"
-edition = "2021"
-authors = ["ImBIOS <imbios@users.noreply.github.com>"]
+edition = "2024"
+authors = ["Imamuzzaki Abu Salam <imamuzzaki@gmail.com>"]
 description = "Display version information for dependencies in package files"
-repository = "https://github.com/ImBIOS/zed-versionlens"
+repository = "https://github.com/ImBIOS/versionlens"
 
 [lib]
 crate-type = ["cdylib"]
