@@ -1,6 +1,8 @@
 use std::sync::Arc;
 use zed_extension_api as zed;
 
+pub mod parsers;
+
 struct VersionLensExtension;
 
 impl zed::Extension for VersionLensExtension {
