@@ -1,11 +1,12 @@
 use zed_extension_api as zed;
 
 pub mod cache;
+pub mod commands;
+pub mod events;
 pub mod parsers;
 pub mod registry;
 pub mod ui;
 pub mod version;
-pub mod events;
 
 pub use cache::FileCache;
 pub use ui::{Badge, BadgeStyle, DecorationManager};
