@@ -5,10 +5,12 @@ pub mod commands;
 pub mod events;
 pub mod parsers;
 pub mod registry;
+pub mod state;
 pub mod ui;
 pub mod version;
 
 pub use cache::FileCache;
+pub use state::AppState;
 pub use ui::{Badge, BadgeStyle, DecorationManager};
 pub use version::comparison::VersionComparator;
 pub use events::{Debouncer, BufferWatcher};
