@@ -7,7 +7,7 @@ Git branches enable parallel development by allowing multiple developers to work
 Always create branches from a clean main branch:
 ```bash
 # Ensure main is up to date
-git checkout main
+git checkout ccpm-explore
 git pull origin main
 
 # Create branch for epic
@@ -58,7 +58,7 @@ git commit -m "Issue #1235: Add dashboard component"
 When epic is complete, merge back to main:
 ```bash
 # From main repository
-git checkout main
+git checkout ccpm-explore
 git pull origin main
 
 # Merge epic branch

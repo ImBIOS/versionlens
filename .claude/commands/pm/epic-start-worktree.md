@@ -36,7 +36,7 @@ Follow `/rules/worktree-operations.md`:
 ```bash
 # If worktree doesn't exist, create it
 if ! git worktree list | grep -q "epic-$ARGUMENTS"; then
-  git checkout main
+  git checkout ccpm-explore
   git pull origin main
   git worktree add ../epic-$ARGUMENTS -b epic/$ARGUMENTS
   echo "✅ Created worktree: ../epic-$ARGUMENTS"

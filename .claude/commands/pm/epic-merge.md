@@ -90,7 +90,7 @@ Update `.claude/epics/$ARGUMENTS/epic.md`:
 cd {main-repo-path}
 
 # Ensure main is up to date
-git checkout main
+git checkout ccpm-explore
 git pull origin main
 
 # Attempt merge

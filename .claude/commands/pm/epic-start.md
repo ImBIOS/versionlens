@@ -37,6 +37,13 @@ Launch parallel agents to work on epic tasks in a shared branch.
 
 ### 1. Create or Enter Branch
 
+First, determine the base branch from the epic:
+```bash
+# Read base_branch from epic frontmatter (default to ccpm-explore)
+BASE_BRANCH=$(grep "^base_branch:" .claude/epics/$ARGUMENTS/epic.md 2>/dev/null | cut -d: -f2 | tr -d ' ' || echo "ccpm-explore")
+echo "Using base branch: $BASE_BRANCH"
+```
+
 Follow `/rules/branch-operations.md`:
 
 ```bash
@@ -48,11 +55,11 @@ fi
 
 # If branch doesn't exist, create it
 if ! git branch -a | grep -q "epic/$ARGUMENTS"; then
-  git checkout main
-  git pull origin main
+  git checkout "$BASE_BRANCH"
+  git pull origin "$BASE_BRANCH"
   git checkout -b epic/$ARGUMENTS
   git push -u origin epic/$ARGUMENTS
-  echo "✅ Created branch: epic/$ARGUMENTS"
+  echo "✅ Created branch: epic/$ARGUMENTS from $BASE_BRANCH"
 else
   git checkout epic/$ARGUMENTS
   git pull origin epic/$ARGUMENTS

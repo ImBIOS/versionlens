@@ -425,7 +425,7 @@ Follow `/rules/worktree-operations.md` to create development worktree:
 
 ```bash
 # Ensure main is current
-git checkout main
+git checkout ccpm-explore
 git pull origin main
 
 # Create worktree for epic

@@ -7,7 +7,7 @@ Git worktrees enable parallel development by allowing multiple working directori
 Always create worktrees from a clean main branch:
 ```bash
 # Ensure main is up to date
-git checkout main
+git checkout ccpm-explore
 git pull origin main
 
 # Create worktree for epic
@@ -56,7 +56,7 @@ When epic is complete, merge back to main:
 ```bash
 # From main repository (not worktree)
 cd {main-repo}
-git checkout main
+git checkout ccpm-explore
 git pull origin main
 
 # Merge epic branch
