@@ -4,9 +4,11 @@ pub mod parsers;
 pub mod registry;
 pub mod ui;
 pub mod version;
+pub mod events;
 
 pub use ui::{Badge, BadgeStyle, DecorationManager};
 pub use version::comparison::VersionComparator;
+pub use events::{Debouncer, BufferWatcher};
 
 struct VersionLensExtension;
 
