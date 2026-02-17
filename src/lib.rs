@@ -2,6 +2,9 @@ use zed_extension_api as zed;
 
 pub mod parsers;
 pub mod registry;
+pub mod ui;
+
+pub use ui::{Badge, BadgeStyle, DecorationManager};
 
 struct VersionLensExtension;
 
