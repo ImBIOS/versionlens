@@ -1,4 +1,11 @@
 pub mod types;
+pub mod npm;
+pub mod cargo;
+pub mod go;
+pub mod pyproject;
+pub mod gemfile;
+pub mod pubspec;
+
 use types::Dependency;
 
 pub trait PackageParser {
