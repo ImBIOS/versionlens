@@ -1,9 +1,9 @@
 ---
 name: zed-versionlens
-status: backlog
+status: completed
 created: 2026-02-17T08:11:46Z
-updated: 2026-02-17T08:11:46Z
-progress: 0%
+updated: 2026-02-18T01:03:13Z
+progress: 100%
 base_branch: ccpm-explore
 prd: .claude/prds/zed-versionlens.md
 github: https://github.com/ImBIOS/versionlens/issues/1

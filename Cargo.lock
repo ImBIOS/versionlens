@@ -277,6 +277,18 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "ebc1c04c71510c7f702b52b7c350734c9ff1295c464a03335b00bb84fc54f853"
 
 [[package]]
+name = "versionlens"
+version = "0.0.1"
+dependencies = [
+ "regex",
+ "semver",
+ "serde",
+ "serde_json",
+ "toml",
+ "zed_extension_api",
+]
+
+[[package]]
 name = "wasm-encoder"
 version = "0.201.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -411,17 +423,6 @@ dependencies = [
  "serde_json",
  "unicode-xid",
  "wasmparser",
-]
-
-[[package]]
-name = "zed-versionlens"
-version = "0.0.1"
-dependencies = [
- "regex",
- "serde",
- "serde_json",
- "toml",
- "zed_extension_api",
 ]
 
 [[package]]

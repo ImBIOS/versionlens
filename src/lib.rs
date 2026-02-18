@@ -1,5 +1,6 @@
 use zed_extension_api as zed;
 
+mod cache;
 mod version;
 
 struct VersionLensExtension;
