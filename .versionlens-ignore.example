@@ -1,0 +1,10 @@
+# Example ignore file for VersionLens
+#
+# One package name per line
+# Lines starting with # are comments
+# Empty lines are ignored
+#
+# Example:
+# lodash
+# @types/node
+# my-private-package
